@@ -3,22 +3,26 @@
         <div class="row">
             <div class="col-md-6">
                 <h2 class="text-container">Add Product</h2>
-                <form>
+
+                <form action="/admin/add-product" method="post" enctype="multipart/form-data" >
                     <label for="">Name</label>
                     <input type="text" class="form-control" placeholder="First name">
 
-                    <label for="">Name</label>
+                    <label for="">Category</label>
                     <input type="text" class="form-control" placeholder="First name">
 
-                    <label for="">Name</label>
+                    <label for="">Price</label>
                     <input type="text" class="form-control" placeholder="First name">
 
-                    <label for="">Name</label>
+                    <label for="">Description</label>
                     <input type="text" class="form-control" placeholder="First name">
                     
-                    <label for="">Name</label>
-                    <input type="text" class="form-control" placeholder="First name">
+                    <label for="">Image</label>
+                    <input type="file" class="form-control" placeholder="First name">
+
+                    <input class="btn btn-success m-5" type="submit" value="Submin">
                 </form>
+
             </div>
         </div>
     </div>

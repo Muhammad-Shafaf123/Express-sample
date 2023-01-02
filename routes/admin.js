@@ -32,8 +32,14 @@ router.get('/', function(req, res, next) {
   res.render('admin/view-products',{role : true, products : products});
 });
 
-router.get('admin/add-product', function(req, res, next) {
-  res.render('admin/view-products',{role : true, products : products});
+router.get('/add-product', function(req, res, next) {
+  res.render('admin/add-product');
 })
+
+router.post('/add-product',(req, res)=>{
+  console.log(req.body);
+} )
+
+
 
 module.exports = router;
